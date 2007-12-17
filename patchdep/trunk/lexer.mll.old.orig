@@ -1,0 +1,21 @@
+{
+        open Parser        (* The type token is defined in parser.mli *)
+        exception Eof
+}
+
+rule entry_point = parse
+  | "+++" {}
+rule token = parse
+  | '\n'"+++"    { FILEMARKER}
+  | "---"    { let _ = find_eol lexbuf in token lexbuf}
+  | [' ''\t']"@@"    { LINEMARKERSTOP}
+  | ['\n']"@@"    { LINEMARKERSTART}
+  | ['+''-'](['0'-'9']+ as location)','(['0'-'9']+ as change)  {
+          CHANGESPEC(int_of_string location, int_of_string change) }
+  | (['a'-'z''A'-'Z''0'-'9''-''_''.']+ as fname) {let _ = find_eol lexbuf in FILEDEF(fname)}
+  | _ {let _ = find_eol lexbuf in token lexbuf}
+  | eof {EOF}
+  and
+  find_eol = parse
+  | ['\n'] { () }
+  | _ {find_eol lexbuf}

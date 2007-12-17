@@ -1,0 +1,133 @@
+   0  $accept : %entry% $end
+
+   1  changespec : CHANGESPEC CHANGESPEC
+
+   2  changespeclist : changespeclist changespec
+   3                 |
+
+   4  filespec : FILEDEF changespeclist
+
+   5  filespeclist : filespeclist filespec
+   6               |
+
+   7  file : filespeclist EOF
+
+   8  %entry% : '\001' file
+   9          | '\002' filespeclist
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	'\002'  shift 2
+	.  error
+
+	%entry%  goto 3
+
+
+state 1
+	%entry% : '\001' . file  (8)
+	filespeclist : .  (6)
+
+	.  reduce 6
+
+	file  goto 4
+	filespeclist  goto 5
+
+
+state 2
+	%entry% : '\002' . filespeclist  (9)
+	filespeclist : .  (6)
+
+	.  reduce 6
+
+	filespeclist  goto 6
+
+
+state 3
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 4
+	%entry% : '\001' file .  (8)
+
+	.  reduce 8
+
+
+state 5
+	filespeclist : filespeclist . filespec  (5)
+	file : filespeclist . EOF  (7)
+
+	FILEDEF  shift 7
+	EOF  shift 8
+	.  error
+
+	filespec  goto 9
+
+
+state 6
+	filespeclist : filespeclist . filespec  (5)
+	%entry% : '\002' filespeclist .  (9)
+
+	FILEDEF  shift 7
+	$end  reduce 9
+
+	filespec  goto 9
+
+
+state 7
+	filespec : FILEDEF . changespeclist  (4)
+	changespeclist : .  (3)
+
+	.  reduce 3
+
+	changespeclist  goto 10
+
+
+state 8
+	file : filespeclist EOF .  (7)
+
+	.  reduce 7
+
+
+state 9
+	filespeclist : filespeclist filespec .  (5)
+
+	.  reduce 5
+
+
+state 10
+	changespeclist : changespeclist . changespec  (2)
+	filespec : FILEDEF changespeclist .  (4)
+
+	CHANGESPEC  shift 11
+	$end  reduce 4
+	FILEDEF  reduce 4
+	EOF  reduce 4
+
+	changespec  goto 12
+
+
+state 11
+	changespec : CHANGESPEC . CHANGESPEC  (1)
+
+	CHANGESPEC  shift 13
+	.  error
+
+
+state 12
+	changespeclist : changespeclist changespec .  (2)
+
+	.  reduce 2
+
+
+state 13
+	changespec : CHANGESPEC CHANGESPEC .  (1)
+
+	.  reduce 1
+
+
+8 terminals, 7 nonterminals
+10 grammar rules, 14 states

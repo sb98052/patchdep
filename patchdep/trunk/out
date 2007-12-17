@@ -1,0 +1,2577 @@
+State 0: shift to state 1
+State 1: read token TYPE
+State 1: shift to state 44
+State 44: read token LIDENT(linespec)
+State 44: reduce by rule 329
+State 191: shift to state 385
+State 385: read token EQUAL
+State 385: shift to state 587
+State 587: read token LIDENT(int)
+State 587: shift to state 279
+State 279: read token STAR
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: shift to state 496
+State 496: read token LIDENT(int)
+State 496: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token TYPE
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 654: reduce by rule 397
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 733: reduce by rule 321
+State 588: reduce by rule 319
+State 738: reduce by rule 317
+State 190: reduce by rule 315
+State 189: reduce by rule 37
+State 50: shift to state 44
+State 44: read token LIDENT(changespec)
+State 44: reduce by rule 329
+State 191: shift to state 385
+State 385: read token EQUAL
+State 385: shift to state 587
+State 587: read token UIDENT(ChangeSpec)
+State 587: shift to state 732
+State 732: read token OF
+State 732: reduce by rule 445
+State 737: shift to state 268
+State 268: read token LIDENT(linespec)
+State 268: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token STAR
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 467: shift to state 625
+State 625: read token LIDENT(linespec)
+State 625: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token TYPE
+State 293: reduce by rule 363
+State 782: reduce by rule 401
+State 467: reduce by rule 342
+State 859: reduce by rule 340
+State 736: reduce by rule 338
+State 735: reduce by rule 322
+State 588: reduce by rule 319
+State 738: reduce by rule 317
+State 190: reduce by rule 315
+State 189: reduce by rule 37
+State 50: shift to state 44
+State 44: read token LIDENT(filespec)
+State 44: reduce by rule 329
+State 191: shift to state 385
+State 385: read token EQUAL
+State 385: shift to state 587
+State 587: read token UIDENT(FileSpec)
+State 587: shift to state 732
+State 732: read token OF
+State 732: reduce by rule 445
+State 737: shift to state 268
+State 268: read token LIDENT(string)
+State 268: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token STAR
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 467: shift to state 625
+State 625: read token LIDENT(changespec)
+State 625: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token LIDENT(list)
+State 293: shift to state 323
+State 323: reduce by rule 459
+State 498: reduce by rule 368
+State 293: read token TYPE
+State 293: reduce by rule 363
+State 782: reduce by rule 401
+State 467: reduce by rule 342
+State 859: reduce by rule 340
+State 736: reduce by rule 338
+State 735: reduce by rule 322
+State 588: reduce by rule 319
+State 738: reduce by rule 317
+State 190: reduce by rule 315
+State 189: reduce by rule 37
+State 50: shift to state 44
+State 44: read token LIDENT(filespeclist)
+State 44: reduce by rule 329
+State 191: shift to state 385
+State 385: read token EQUAL
+State 385: shift to state 587
+State 587: read token LIDENT(filespec)
+State 587: shift to state 279
+State 279: read token LIDENT(list)
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: shift to state 323
+State 323: reduce by rule 459
+State 498: reduce by rule 368
+State 293: read token EOF
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 733: reduce by rule 321
+State 588: reduce by rule 319
+State 738: reduce by rule 317
+State 190: reduce by rule 315
+State 189: reduce by rule 37
+State 50: reduce by rule 30
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 52: reduce by rule 28
+State 48: shift to state 195
+State 195: reduce by rule 1
+State 47: reduce by rule 495
+State 0: shift to state 1
+State 1: read token TYPE
+State 1: shift to state 44
+State 44: read token LIDENT(token)
+State 44: reduce by rule 329
+State 191: shift to state 385
+State 385: read token EQUAL
+State 385: shift to state 587
+State 587: read token BAR
+State 587: reduce by rule 483
+State 734: shift to state 856
+State 856: read token UIDENT(FILEMARKER)
+State 856: shift to state 929
+State 929: reduce by rule 445
+State 737: read token BAR
+State 737: reduce by rule 341
+State 859: reduce by rule 340
+State 736: reduce by rule 338
+State 930: shift to state 858
+State 858: read token UIDENT(LINEMARKERSTART)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token BAR
+State 737: reduce by rule 341
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: shift to state 858
+State 858: read token UIDENT(LINEMARKERSTOP)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token BAR
+State 737: reduce by rule 341
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: shift to state 858
+State 858: read token UIDENT(CHANGESPEC)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token OF
+State 737: shift to state 268
+State 268: read token LPAREN
+State 268: shift to state 280
+State 280: read token LIDENT(int)
+State 280: shift to state 279
+State 279: read token STAR
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: shift to state 496
+State 496: read token LIDENT(int)
+State 496: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 654: reduce by rule 397
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 485: reduce by rule 398
+State 486: shift to state 642
+State 642: read token BAR
+State 642: reduce by rule 364
+State 468: reduce by rule 400
+State 467: reduce by rule 342
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: shift to state 858
+State 858: read token UIDENT(FILEDEF)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token OF
+State 737: shift to state 268
+State 268: read token LPAREN
+State 268: shift to state 280
+State 280: read token LIDENT(string)
+State 280: shift to state 279
+State 279: read token RPAREN
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 485: reduce by rule 398
+State 486: shift to state 642
+State 642: read token BAR
+State 642: reduce by rule 364
+State 468: reduce by rule 400
+State 467: reduce by rule 342
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: shift to state 858
+State 858: read token UIDENT(CHANGEDEF)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token BAR
+State 737: reduce by rule 341
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: shift to state 858
+State 858: read token UIDENT(EOF)
+State 858: shift to state 929
+State 929: reduce by rule 445
+State 737: read token OPEN
+State 737: reduce by rule 341
+State 859: reduce by rule 340
+State 934: reduce by rule 339
+State 930: reduce by rule 324
+State 588: reduce by rule 319
+State 738: reduce by rule 317
+State 190: reduce by rule 315
+State 189: reduce by rule 37
+State 50: shift to state 38
+State 38: read token UIDENT(Parsing)
+State 38: shift to state 45
+State 45: reduce by rule 461
+State 181: read token SEMISEMI
+State 181: reduce by rule 43
+State 50: shift to state 40
+State 40: read token OPEN
+State 40: shift to state 38
+State 38: read token UIDENT(Types)
+State 38: shift to state 45
+State 45: reduce by rule 461
+State 181: read token OPEN
+State 181: reduce by rule 43
+State 184: shift to state 38
+State 38: read token UIDENT(Printf)
+State 38: shift to state 45
+State 45: reduce by rule 461
+State 181: read token LET
+State 181: reduce by rule 43
+State 50: shift to state 196
+State 196: read token LIDENT(yytransl_const)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LBRACKETBAR
+State 554: shift to state 27
+State 27: read token INT(257)
+State 27: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 142: reduce by rule 274
+State 145: shift to state 350
+State 350: read token INT(258)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token INT(259)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token INT(262)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token INT(0)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token INT(0)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token BARRBRACKET
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: reduce by rule 491
+State 352: shift to state 549
+State 549: reduce by rule 232
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yytransl_block)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LBRACKETBAR
+State 554: shift to state 27
+State 27: read token INT(260)
+State 27: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 142: reduce by rule 274
+State 145: shift to state 350
+State 350: read token INT(261)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token INT(0)
+State 350: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token BARRBRACKET
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: reduce by rule 491
+State 352: shift to state 549
+State 549: reduce by rule 232
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yylhs)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING(ÿÿ)
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yylen)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yydefred)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yydgoto)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yysindex)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yyrindex)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yygindex)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yytablesize)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token INT(263)
+State 554: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yytable)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yycheck)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING()
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yynames_const)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING(FILEMARKER)
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yynames_block)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token STRING(CHANGESPEC)
+State 554: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yyact)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LBRACKETBAR
+State 554: shift to state 27
+State 27: read token LPAREN
+State 27: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token UNDERSCORE
+State 16: shift to state 113
+State 113: reduce by rule 290
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LIDENT(failwith)
+State 328: shift to state 29
+State 29: read token STRING(parser)
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: shift to state 41
+State 41: reduce by rule 409
+State 62: reduce by rule 214
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 142: reduce by rule 274
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LET
+State 328: shift to state 88
+State 88: read token LIDENT(_1)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token LIDENT(int)
+State 360: shift to state 279
+State 279: read token STAR
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: shift to state 496
+State 496: read token LIDENT(int)
+State 496: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 654: reduce by rule 397
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token LET
+State 552: shift to state 88
+State 88: read token LIDENT(_2)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token LIDENT(int)
+State 360: shift to state 279
+State 279: read token STAR
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: shift to state 496
+State 496: read token LIDENT(int)
+State 496: shift to state 323
+State 323: reduce by rule 459
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 468: reduce by rule 400
+State 654: reduce by rule 397
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token UIDENT(Obj)
+State 552: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token UIDENT(ChangeSpec)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token LPAREN
+State 51: reduce by rule 452
+State 53: shift to state 80
+State 80: read token LIDENT(_1)
+State 80: shift to state 29
+State 29: read token COMMA
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 55: shift to state 207
+State 207: read token LIDENT(_2)
+State 207: shift to state 29
+State 29: read token RPAREN
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 397: reduce by rule 267
+State 57: reduce by rule 177
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 200: read token RPAREN
+State 200: reduce by rule 178
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespec)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LET
+State 328: shift to state 88
+State 88: read token LIDENT(_1)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespeclist)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token LET
+State 552: shift to state 88
+State 88: read token LIDENT(_2)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespec)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token UIDENT(Obj)
+State 552: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token LIDENT(_1)
+State 30: shift to state 29
+State 29: read token INFIXOP1(@)
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 55: shift to state 211
+State 211: read token LBRACKET
+State 211: shift to state 26
+State 26: read token LIDENT(_2)
+State 26: shift to state 29
+State 29: read token RBRACKET
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 142: reduce by rule 274
+State 143: reduce by rule 491
+State 351: shift to state 547
+State 547: reduce by rule 235
+State 56: read token RPAREN
+State 56: reduce by rule 168
+State 401: reduce by rule 187
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespeclist)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token UIDENT(Obj)
+State 328: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token LBRACKET
+State 30: shift to state 26
+State 26: read token RBRACKET
+State 26: shift to state 141
+State 141: reduce by rule 453
+State 53: read token RPAREN
+State 53: reduce by rule 215
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespeclist)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LET
+State 328: shift to state 88
+State 88: read token LIDENT(_1)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token LIDENT(string)
+State 360: shift to state 279
+State 279: read token RPAREN
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token LET
+State 552: shift to state 88
+State 88: read token LIDENT(_2)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(changespeclist)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token UIDENT(Obj)
+State 552: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token UIDENT(FileSpec)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token LPAREN
+State 51: reduce by rule 452
+State 53: shift to state 80
+State 80: read token LIDENT(_1)
+State 80: shift to state 29
+State 29: read token COMMA
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 55: shift to state 207
+State 207: read token LIDENT(_2)
+State 207: shift to state 29
+State 29: read token RPAREN
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 397: reduce by rule 267
+State 57: reduce by rule 177
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 200: read token RPAREN
+State 200: reduce by rule 178
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(filespec)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LET
+State 328: shift to state 88
+State 88: read token LIDENT(_1)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token LET
+State 552: shift to state 88
+State 88: read token LIDENT(_2)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token QUOTE
+State 360: shift to state 283
+State 283: read token LIDENT(filespec)
+State 283: shift to state 84
+State 84: reduce by rule 421
+State 489: reduce by rule 365
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token UIDENT(Obj)
+State 552: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token LIDENT(_1)
+State 30: shift to state 29
+State 29: read token INFIXOP1(@)
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 55: shift to state 211
+State 211: read token LBRACKET
+State 211: shift to state 26
+State 26: read token LIDENT(_2)
+State 26: shift to state 29
+State 29: read token RBRACKET
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 142: reduce by rule 274
+State 143: reduce by rule 491
+State 351: shift to state 547
+State 547: reduce by rule 235
+State 56: read token RPAREN
+State 56: reduce by rule 168
+State 401: reduce by rule 187
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token UIDENT(Obj)
+State 328: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token LBRACKET
+State 30: shift to state 26
+State 26: read token RBRACKET
+State 26: shift to state 141
+State 141: reduce by rule 453
+State 53: read token RPAREN
+State 53: reduce by rule 215
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LET
+State 328: shift to state 88
+State 88: read token LIDENT(_1)
+State 88: reduce by rule 479
+State 258: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token IN
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 458: shift to state 552
+State 552: read token UIDENT(Obj)
+State 552: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(repr)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LPAREN
+State 56: shift to state 80
+State 80: read token LPAREN
+State 80: shift to state 30
+State 30: read token LIDENT(_1)
+State 30: shift to state 29
+State 29: read token RPAREN
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token COLON
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 694: reduce by rule 170
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LIDENT(raise)
+State 328: shift to state 29
+State 29: read token LPAREN
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: shift to state 80
+State 80: read token UIDENT(Parsing)
+State 80: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token UIDENT(YYexit)
+State 199: shift to state 389
+State 389: reduce by rule 462
+State 51: read token LPAREN
+State 51: reduce by rule 452
+State 53: shift to state 80
+State 80: read token UIDENT(Parsing)
+State 80: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 200: read token RPAREN
+State 200: reduce by rule 178
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token SEMI
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: shift to state 350
+State 350: read token LPAREN
+State 350: shift to state 30
+State 30: read token FUN
+State 30: shift to state 16
+State 16: read token LIDENT(__caml_parser_env)
+State 16: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 117: reduce by rule 159
+State 116: read token MINUSGREATER
+State 116: shift to state 328
+State 328: read token LIDENT(raise)
+State 328: shift to state 29
+State 29: read token LPAREN
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: shift to state 80
+State 80: read token UIDENT(Parsing)
+State 80: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token UIDENT(YYexit)
+State 199: shift to state 389
+State 389: reduce by rule 462
+State 51: read token LPAREN
+State 51: reduce by rule 452
+State 53: shift to state 80
+State 80: read token UIDENT(Parsing)
+State 80: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(peek_val)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(__caml_parser_env)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(0)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 200: read token RPAREN
+State 200: reduce by rule 178
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 229: read token RPAREN
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 524: reduce by rule 264
+State 332: reduce by rule 262
+State 331: reduce by rule 173
+State 55: reduce by rule 149
+State 169: shift to state 362
+State 362: reduce by rule 217
+State 56: read token BARRBRACKET
+State 56: reduce by rule 168
+State 545: reduce by rule 275
+State 145: reduce by rule 491
+State 352: shift to state 549
+State 549: reduce by rule 232
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(yytables)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token EQUAL
+State 356: shift to state 554
+State 554: read token LBRACE
+State 554: shift to state 24
+State 24: read token UIDENT(Parsing)
+State 24: shift to state 45
+State 45: reduce by rule 461
+State 132: read token DOT
+State 132: shift to state 340
+State 340: read token LIDENT(actions)
+State 340: shift to state 537
+State 537: read token EQUAL
+State 537: reduce by rule 458
+State 134: shift to state 342
+State 342: read token LIDENT(yyact)
+State 342: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 539: reduce by rule 270
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(transl_const)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yytransl_const)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(transl_block)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yytransl_block)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(lhs)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yylhs)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(len)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yylen)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(defred)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yydefred)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(dgoto)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yydgoto)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(sindex)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yysindex)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(rindex)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yyrindex)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(gindex)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yygindex)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(tablesize)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yytablesize)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(table)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yytable)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(check)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yycheck)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(error_function)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(parse_error)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(names_const)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yynames_const)
+State 690: shift to state 29
+State 29: read token SEMI
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: shift to state 345
+State 345: read token UIDENT(Parsing)
+State 345: shift to state 45
+State 45: reduce by rule 461
+State 298: read token DOT
+State 298: shift to state 501
+State 501: read token LIDENT(names_block)
+State 501: shift to state 659
+State 659: reduce by rule 458
+State 540: read token EQUAL
+State 540: shift to state 690
+State 690: read token LIDENT(yynames_block)
+State 690: shift to state 29
+State 29: read token RBRACE
+State 29: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 56: reduce by rule 168
+State 826: reduce by rule 271
+State 136: reduce by rule 491
+State 346: reduce by rule 269
+State 135: shift to state 344
+State 344: reduce by rule 230
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(file)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token LPAREN
+State 356: shift to state 107
+State 107: read token LIDENT(lexfun)
+State 107: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 304: reduce by rule 281
+State 311: read token COLON
+State 311: shift to state 517
+State 517: read token UIDENT(Lexing)
+State 517: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(lexbuf)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token MINUSGREATER
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: shift to state 495
+State 495: read token LIDENT(token)
+State 495: shift to state 279
+State 279: read token RPAREN
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 653: reduce by rule 362
+State 291: reduce by rule 356
+State 675: shift to state 814
+State 814: reduce by rule 305
+State 117: reduce by rule 159
+State 555: read token LPAREN
+State 555: shift to state 107
+State 107: read token LIDENT(lexbuf)
+State 107: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 304: reduce by rule 281
+State 311: read token COLON
+State 311: shift to state 517
+State 517: read token UIDENT(Lexing)
+State 517: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(lexbuf)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 675: shift to state 814
+State 814: reduce by rule 305
+State 117: reduce by rule 159
+State 555: read token EQUAL
+State 555: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(yyparse)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(yytables)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(1)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token LIDENT(lexfun)
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token LIDENT(lexbuf)
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token LET
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 697: reduce by rule 259
+State 557: reduce by rule 256
+State 697: reduce by rule 259
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: shift to state 196
+State 196: read token LIDENT(filespeclist)
+State 196: reduce by rule 479
+State 388: shift to state 79
+State 79: reduce by rule 422
+State 356: read token LPAREN
+State 356: shift to state 107
+State 107: read token LIDENT(lexfun)
+State 107: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 304: reduce by rule 281
+State 311: read token COLON
+State 311: shift to state 517
+State 517: read token UIDENT(Lexing)
+State 517: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(lexbuf)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token MINUSGREATER
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: shift to state 495
+State 495: read token LIDENT(token)
+State 495: shift to state 279
+State 279: read token RPAREN
+State 279: reduce by rule 459
+State 289: reduce by rule 367
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 653: reduce by rule 362
+State 291: reduce by rule 356
+State 675: shift to state 814
+State 814: reduce by rule 305
+State 117: reduce by rule 159
+State 555: read token LPAREN
+State 555: shift to state 107
+State 107: read token LIDENT(lexbuf)
+State 107: shift to state 79
+State 79: reduce by rule 422
+State 119: reduce by rule 289
+State 304: reduce by rule 281
+State 311: read token COLON
+State 311: shift to state 517
+State 517: read token UIDENT(Lexing)
+State 517: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(lexbuf)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 675: shift to state 814
+State 814: reduce by rule 305
+State 117: reduce by rule 159
+State 555: read token EQUAL
+State 555: shift to state 554
+State 554: read token LPAREN
+State 554: shift to state 30
+State 30: read token UIDENT(Parsing)
+State 30: shift to state 45
+State 45: reduce by rule 461
+State 51: read token DOT
+State 51: shift to state 199
+State 199: read token LIDENT(yyparse)
+State 199: shift to state 79
+State 79: reduce by rule 422
+State 390: reduce by rule 451
+State 61: reduce by rule 213
+State 56: read token LIDENT(yytables)
+State 56: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token INT(2)
+State 229: reduce by rule 245
+State 230: reduce by rule 243
+State 228: shift to state 20
+State 20: reduce by rule 407
+State 62: reduce by rule 214
+State 229: read token LIDENT(lexfun)
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token LIDENT(lexbuf)
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: shift to state 79
+State 79: reduce by rule 422
+State 59: reduce by rule 450
+State 61: reduce by rule 213
+State 229: read token COLON
+State 229: reduce by rule 245
+State 422: reduce by rule 244
+State 228: reduce by rule 169
+State 55: reduce by rule 149
+State 169: shift to state 360
+State 360: read token UIDENT(Types)
+State 360: shift to state 285
+State 285: reduce by rule 463
+State 290: read token DOT
+State 290: shift to state 492
+State 492: read token LIDENT(filespeclist)
+State 492: shift to state 649
+State 649: reduce by rule 460
+State 289: reduce by rule 367
+State 293: read token RPAREN
+State 293: reduce by rule 363
+State 292: reduce by rule 396
+State 288: reduce by rule 358
+State 291: reduce by rule 356
+State 561: reduce by rule 276
+State 363: shift to state 564
+State 564: reduce by rule 222
+State 56: read token EOF
+State 56: reduce by rule 168
+State 55: reduce by rule 149
+State 696: reduce by rule 258
+State 557: reduce by rule 256
+State 697: reduce by rule 259
+State 557: reduce by rule 256
+State 697: reduce by rule 259
+State 557: reduce by rule 256
+State 558: reduce by rule 254
+State 357: reduce by rule 252
+State 591: reduce by rule 35
+State 50: reduce by rule 30
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 380: reduce by rule 33
+State 198: reduce by rule 34
+State 198: reduce by rule 34
+State 52: reduce by rule 28
+State 48: shift to state 195
+State 195: reduce by rule 1
+State 47: reduce by rule 495
+File "parser.ml", line 1, characters 0-1:
+Could not find the .cmi file for interface parser.mli.
+make: *** [parser.cmx] Error 2
