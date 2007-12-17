@@ -1,0 +1,47 @@
+From: Daniel Walker <dwalker@mvista.com>
+
+Signed-off-by: Daniel Walker <dwalker@mvista.com>
+Cc: Paul Menage <menage@google.com>
+Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+---
+
+ kernel/container.c |   18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+diff -puN kernel/container.c~containersv10-support-for-automatic-userspace-release-agents-whitespace kernel/container.c
+--- a/kernel/container.c~containersv10-support-for-automatic-userspace-release-agents-whitespace
++++ a/kernel/container.c
+@@ -1760,7 +1760,7 @@ static int container_populate_dir(struct
+ 	container_clear_directory(cont->dentry);
+ 
+ 	err = container_add_files(cont, files, ARRAY_SIZE(files));
+-     	if (err < 0)
++	if (err < 0)
+ 		return err;
+ 
+ 	if (cont == cont->top_container) {
+@@ -1988,15 +1988,15 @@ static void container_init_subsys(struct
+  	/* If this subsystem requested that it be notified with fork
+  	 * events, we should send it one now for every process in the
+  	 * system */
+- 	if (ss->fork) {
+- 		struct task_struct *g, *p;
++	if (ss->fork) {
++		struct task_struct *g, *p;
+ 
+- 		read_lock(&tasklist_lock);
+- 		do_each_thread(g, p) {
+- 			ss->fork(ss, p);
+- 		} while_each_thread(g, p);
+- 		read_unlock(&tasklist_lock);
+- 	}
++		read_lock(&tasklist_lock);
++		do_each_thread(g, p) {
++			ss->fork(ss, p);
++		} while_each_thread(g, p);
++		read_unlock(&tasklist_lock);
++	}
+ 
+ 	need_forkexit_callback |= ss->fork || ss->exit;
+ 
+_

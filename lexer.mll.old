@@ -1,0 +1,20 @@
+{
+        open Parser        (* The type token is defined in parser.mli *)
+        exception Eof
+}
+
+rule scanner = parse
+  | ("+++"|"@@") {changespec lexbuf}
+and
+changespec = parse
+  | ['+''-'](['0'-'9']+ as location)','(['0'-'9']+ as change)  {
+          let _ = find_eol lexbuf in CHANGESPEC(int_of_string location, int_of_string change) }
+  | (['a'-'z''A'-'Z''0'-'9''-''_''.']+ as fname) {let _ = find_eol lexbuf in FILEDEF(fname)}
+  | _ {let _ = find_eol lexbuf in token lexbuf}
+  | eof {EOF}
+and
+find_eol = parse
+  | ['\n'] { () }
+  | _ {find_eol lexbuf}
+and 
+change_spec = parse

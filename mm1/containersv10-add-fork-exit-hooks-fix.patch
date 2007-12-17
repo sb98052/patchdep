@@ -1,0 +1,96 @@
+From: Andrew Morton <akpm@linux-foundation.org>
+
+Cc: "Eric W. Biederman" <ebiederm@xmission.com>
+Cc: "Serge E. Hallyn" <serue@us.ibm.com>
+Cc: Balbir Singh <balbir@in.ibm.com>
+Cc: Dave Hansen <haveblue@us.ibm.com>
+Cc: Herbert Poetzl <herbert@13thfloor.at>
+Cc: Kirill Korotaev <dev@openvz.org>
+Cc: Paul Jackson <pj@sgi.com>
+Cc: Paul Menage <menage@google.com>
+Cc: Srivatsa Vaddagiri <vatsa@in.ibm.com>
+Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+---
+
+ kernel/container.c |   23 ++++++++---------------
+ 1 file changed, 8 insertions(+), 15 deletions(-)
+
+diff -puN kernel/container.c~containersv10-add-fork-exit-hooks-fix kernel/container.c
+--- a/kernel/container.c~containersv10-add-fork-exit-hooks-fix
++++ a/kernel/container.c
+@@ -144,21 +144,18 @@ list_for_each_entry(_root, &roots, root_
+  * it's better for performance to ref-count every subsystem, or to
+  * take a global lock and only add one ref count to each hierarchy.
+  */
+-
+ static void get_css_group(struct css_group *cg)
+ {
+ 	int i;
+-	for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++) {
++	for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++)
+ 		atomic_inc(&cg->subsys[i]->container->count);
+-	}
+ }
+ 
+ static void put_css_group(struct css_group *cg)
+ {
+ 	int i;
+-	for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++) {
++	for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++)
+ 		atomic_dec(&cg->subsys[i]->container->count);
+-	}
+ }
+ 
+ /*
+@@ -1533,8 +1530,7 @@ out:
+  *
+  * At the point that container_fork() is called, 'current' is the parent
+  * task, and the passed argument 'child' points to the child task.
+- **/
+-
++ */
+ void container_fork(struct task_struct *child)
+ {
+ 	rcu_read_lock();
+@@ -1547,17 +1543,15 @@ void container_fork(struct task_struct *
+  * container_fork_callbacks - called on a new task very soon before
+  * adding it to the tasklist. No need to take any locks since no-one
+  * can be operating on this task
+- **/
+-
++ */
+ void container_fork_callbacks(struct task_struct *child)
+ {
+ 	if (need_forkexit_callback) {
+ 		int i;
+ 		for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++) {
+ 			struct container_subsys *ss = subsys[i];
+-			if (ss->fork) {
++			if (ss->fork)
+ 				ss->fork(ss, child);
+-			}
+ 		}
+ 	}
+ }
+@@ -1596,17 +1590,16 @@ void container_fork_callbacks(struct tas
+  *    which wards off any attach_task() attempts, or task is a failed
+  *    fork, never visible to attach_task.
+  *
+- **/
+-
++ */
+ void container_exit(struct task_struct *tsk, int run_callbacks)
+ {
+ 	int i;
++
+ 	if (run_callbacks && need_forkexit_callback) {
+ 		for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++) {
+ 			struct container_subsys *ss = subsys[i];
+-			if (ss->exit) {
++			if (ss->exit)
+ 				ss->exit(ss, tsk);
+-			}
+ 		}
+ 	}
+ 	/* Reassign the task to the init_css_group. */
+_

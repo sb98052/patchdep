@@ -1,0 +1,39 @@
+From: Andrew Morton <akpm@linux-foundation.org>
+
+kernel/container_debug.c: In function 'current_css_group_read':
+kernel/container_debug.c:50: warning: cast from pointer to integer of different size
+
+Don't like this fix.  Why does ->read_uint return u64 at all?  It's a rather
+unnatural type on 32-bit machines.
+
+This code is returning a kernel address to userspace.  This is generally
+verboten.  Can we just delete debug.current_css_group altogether?
+
+Cc: "Eric W. Biederman" <ebiederm@xmission.com>
+Cc: "Serge E. Hallyn" <serue@us.ibm.com>
+Cc: Balbir Singh <balbir@in.ibm.com>
+Cc: Dave Hansen <haveblue@us.ibm.com>
+Cc: Herbert Poetzl <herbert@13thfloor.at>
+Cc: Kirill Korotaev <dev@openvz.org>
+Cc: Paul Jackson <pj@sgi.com>
+Cc: Paul Menage <menage@google.com>
+Cc: Srivatsa Vaddagiri <vatsa@in.ibm.com>
+Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+---
+
+ kernel/container_debug.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff -puN kernel/container_debug.c~containersv10-simple-debug-info-subsystem-fix-2 kernel/container_debug.c
+--- a/kernel/container_debug.c~containersv10-simple-debug-info-subsystem-fix-2
++++ a/kernel/container_debug.c
+@@ -47,7 +47,7 @@ static u64 taskcount_read(struct contain
+ 
+ static u64 current_css_group_read(struct container *cont, struct cftype *cft)
+ {
+-	return (u64)current->containers;
++	return (u64)(long)current->containers;
+ }
+ 
+ static u64 current_css_group_refcount_read(struct container *cont,
+_

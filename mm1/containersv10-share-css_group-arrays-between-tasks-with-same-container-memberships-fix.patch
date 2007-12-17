@@ -1,0 +1,30 @@
+From: Andrew Morton <akpm@linux-foundation.org>
+
+Cc: "Eric W. Biederman" <ebiederm@xmission.com>
+Cc: "Serge E. Hallyn" <serue@us.ibm.com>
+Cc: Balbir Singh <balbir@in.ibm.com>
+Cc: Dave Hansen <haveblue@us.ibm.com>
+Cc: Herbert Poetzl <herbert@13thfloor.at>
+Cc: Kirill Korotaev <dev@openvz.org>
+Cc: Paul Jackson <pj@sgi.com>
+Cc: Paul Menage <menage@google.com>
+Cc: Srivatsa Vaddagiri <vatsa@in.ibm.com>
+Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+---
+
+ kernel/container.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff -puN kernel/container.c~containersv10-share-css_group-arrays-between-tasks-with-same-container-memberships-fix kernel/container.c
+--- a/kernel/container.c~containersv10-share-css_group-arrays-between-tasks-with-same-container-memberships-fix
++++ a/kernel/container.c
+@@ -2086,7 +2086,7 @@ void container_fork_callbacks(struct tas
+ void container_exit(struct task_struct *tsk, int run_callbacks)
+ {
+ 	int i;
+-	struct css_group *cg = NULL;
++	struct css_group *cg;
+ 
+ 	if (run_callbacks && need_forkexit_callback) {
+ 		for (i = 0; i < CONTAINER_SUBSYS_COUNT; i++) {
+_
