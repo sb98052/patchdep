@@ -16,6 +16,7 @@ open Parser
 open Lexer
 open Types
 open Search
+open Helpers
 
 type filename = string
 type patchname = string
@@ -141,7 +142,8 @@ let normalize_dependencies patch file commit_id newcommit cur_stamplist =
 
 let accept_commits patch fs =
   match fs with
-    | FileSpec(str, commitlist) ->
+    | FileSpec(str_local, commitlist) ->
+        let str = remove_parent_directory str_local in
         let cur_stamplist = try Hashtbl.find change_map str with Not_found->([]) in
         let calc_stamp arg newcommit =
           let (counter,arg_cur_stamplist) = arg in

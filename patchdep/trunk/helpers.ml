@@ -1,5 +1,12 @@
 open Printf
 
+let remove_parent_directory str =
+  let len = String.length str in
+  let i = try String.index str '/' with e->
+      printf "Bad filename: %s\n" str;raise e
+  in
+    String.sub str (i+1) (len-i-2)
+
 let read_list_from_file f =
   if (f="") then []
   else
