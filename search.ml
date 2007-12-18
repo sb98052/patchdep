@@ -14,7 +14,7 @@ let dfs graph iterator start finish =
         dfs_visit start_fn finish_fn elt my_neighbours
     in
     let vornot = try Hashtbl.find visited key with Not_found->Future in
-      if (vornot == Future) then
+      if (vornot = Future) then
         begin
           Hashtbl.replace visited key Present;
           start_fn key neighbours;

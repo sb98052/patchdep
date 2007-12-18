@@ -4,7 +4,7 @@ let remove_parent_directory patchlevel str =
   let len = String.length str in
   let rec prune idx level =
     if (level=0) then
-      String.sub str idx (len-idx-1) 
+      String.sub str idx (len-idx) 
     else
       let i = try String.index_from str idx '/' with e->
         begin
