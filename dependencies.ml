@@ -173,5 +173,7 @@ let dep_dfs good_lst =
     in
       Hashtbl.iter my_itty ht
   in
-    dfs adjlist itty (fun x y->()) (fun x y ->()) 
+  let visited = dfs adj_list itty (fun x y->()) (fun x y ->()) in
+  let need_this_patch x y = printf "Need this patch: %s\n" x in
+    Hashtbl.iter need_this_patch visited
 
