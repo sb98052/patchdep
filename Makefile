@@ -22,12 +22,12 @@ include .dep
 .mll.ml:
 	ocamllex $< 
 
-patchdep: types.cmx parser.mli parser.cmi parser.cmx lexer.cmx pretty.cmx helpers.cmx dependencies.cmx main.cmx 
-	ocamlopt types.cmx unix.cmxa parser.cmx lexer.cmx pretty.cmx helpers.cmx dependencies.cmx main.cmx -o patchdep
+patchdep: types.cmx parser.mli parser.cmi parser.cmx lexer.cmx pretty.cmx helpers.cmx search.cmx dependencies.cmx main.cmx 
+	ocamlopt types.cmx unix.cmxa parser.cmx lexer.cmx pretty.cmx helpers.cmx search.cmx dependencies.cmx main.cmx -o patchdep
 
 
-patchdep.b: types.cmo parser.mli parser.cmi parser.cmo lexer.cmo pretty.cmo helpers.cmo dependencies.cmo main.cmo 
-	ocamlc -g types.cmo unix.cma parser.cmo lexer.cmo pretty.cmo helpers.cmo dependencies.cmo main.cmo -o patchdep.b
+patchdep.b: types.cmo parser.mli parser.cmi parser.cmo lexer.cmo pretty.cmo helpers.cmo search.cmo dependencies.cmo main.cmo 
+	ocamlc -g types.cmo unix.cma parser.cmo lexer.cmo pretty.cmo helpers.cmo search.cmx dependencies.cmo main.cmo -o patchdep.b
 
 dep:
 	ocamldep *.ml > .dep
