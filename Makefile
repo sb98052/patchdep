@@ -18,7 +18,7 @@ include .dep
 .mll.ml:
 	ocamllex $< 
 
-patchdep: types.cmx parser.cmi parser.cmx lexer.cmx pretty.cmx helpers.cmx dependencies.cmx main.cmx 
+patchdep: types.cmx parser.mli parser.cmi parser.cmx lexer.cmx pretty.cmx helpers.cmx dependencies.cmx main.cmx 
 	ocamlopt types.cmx unix.cmxa parser.cmx lexer.cmx pretty.cmx helpers.cmx dependencies.cmx main.cmx -o patchdep
 
 dep:

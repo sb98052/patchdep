@@ -11,9 +11,9 @@ let fname_dontwant = ref ""
 
 let cmdspeclist =
   [
-    ("-patchset",Arg.Set_string(fname_patchset),"file with the list of available patches in working order");
-    ("-iwant",Arg.Set_string(fname_iwant), "file with the list of patches you want");
-    ("-dontwant",Arg.Set_string(fname_iwant), "file with the list of patches you want");
+    ("-patchset",Arg.Set_string(fname_patchset),"\tfile with the list of available patches in working order");
+    ("-iwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
+    ("-dontwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
   ]
 
 
