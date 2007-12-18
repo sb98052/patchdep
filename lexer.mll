@@ -23,7 +23,8 @@ globscan = parse
           (* For some *odd* reason "@@" doesn't work *)
           | '@''@' { lexstate:= Changespec;changespec lexbuf}
           | eof {EOF}
-          | _ {let _=find_eol lexbuf in globscan lexbuf}
+          | '\n' {globscan lexbuf}
+          | _ {let _=find_eol lexbuf in scanner lexbuf}
 and
 filespec = parse
   | [' ''\t'] {filespec lexbuf}
@@ -37,5 +38,5 @@ changespec = parse
           | "@@" {lexstate:=Global;globscan lexbuf}
 and
 find_eol = parse
-  | ['\n'] { () }
+  | ['\n''\r'] { () }
   | _ {find_eol lexbuf}

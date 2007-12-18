@@ -1,0 +1,8 @@
+dependencies.cmo: types.cmo pretty.cmo parser.cmi 
+dependencies.cmx: types.cmx pretty.cmx parser.cmx 
+main.cmo: types.cmo helpers.cmo dependencies.cmo 
+main.cmx: types.cmx helpers.cmx dependencies.cmx 
+parser.cmo: types.cmo parser.cmi 
+parser.cmx: types.cmx parser.cmi 
+pretty.cmo: types.cmo 
+pretty.cmx: types.cmx 
