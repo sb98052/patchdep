@@ -9,7 +9,7 @@ let read_list_from_file f =
   let rec read_file cur_list =
     let next_line = try Some(input_line f_file) with _ -> None in
       match next_line with
-        | Some(inp_line) -> read_file (inp_line::cur_list)
+        | Some(inp_line) -> read_file (cur_list@[inp_line])
         | None -> close_in f_file;cur_list
   in
     read_file []
