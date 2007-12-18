@@ -8,9 +8,11 @@ open Dependencies
 let fname_patchset = ref ""
 let fname_iwant = ref ""
 let fname_dontwant = ref ""
+let patch_level = ref 1
 
 let cmdspeclist =
   [
+    ("-patchlevel",Arg.Set_int(patch_level),"\tPatch level");
     ("-patchset",Arg.Set_string(fname_patchset),"\tfile with the list of available patches in working order");
     ("-iwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
     ("-dontwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
@@ -22,5 +24,5 @@ let _ =
   let patchset = read_list_from_file !fname_patchset in
   let iwant = read_list_from_file !fname_iwant in
   let dontwant = read_list_from_file !fname_dontwant in
-    make_dep_map_file_lst patchset;
+    make_dep_map_file_lst !patch_level patchset;
     dep_dfs iwant

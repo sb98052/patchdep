@@ -140,10 +140,10 @@ let normalize_dependencies patch file commit_id newcommit cur_stamplist =
             ((patch,c_newcommit_n),normalized_stamp_lst)
 
 
-let accept_commits patch fs =
+let accept_commits patch patchlevel fs =
   match fs with
     | FileSpec(str_local, commitlist) ->
-        let str = remove_parent_directory str_local in
+        let str = remove_parent_directory patchlevel str_local in
         let cur_stamplist = try Hashtbl.find change_map str with Not_found->([]) in
         let calc_stamp arg newcommit =
           let (counter,arg_cur_stamplist) = arg in
@@ -153,7 +153,7 @@ let accept_commits patch fs =
         let (_,new_stamplist) = List.fold_left calc_stamp (0,cur_stamplist) commitlist in
           Hashtbl.replace change_map str new_stamplist
 
-let make_dep_map_file_lst patch_file_list =
+let make_dep_map_file_lst patchlevel patch_file_list =
   let make_dep_map fname = 
     let fin = 
       try open_in fname 
@@ -163,7 +163,7 @@ let make_dep_map_file_lst patch_file_list =
     in
     let lexbuf = Lexing.from_channel fin in
     let result = Parser.file Lexer.scanner lexbuf in
-      List.iter (accept_commits fname) result
+      List.iter (accept_commits fname patchlevel) result
   in
     List.iter make_dep_map patch_file_list
 
