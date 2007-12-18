@@ -37,14 +37,16 @@ let dep_map = Hashtbl.create 1024
 let adj_list = Hashtbl.create 1024
 
 let add_dependency file mypatch oldpatch myblock oldblock =
-  printf "Adding dependency: {%s[%s:%d,%d (%d)]<- %s[%s:%d,%d (%d)]\n" oldpatch file !oldblock.st !oldblock.num !oldblock.id mypatch file !myblock.st !myblock.num !myblock.id;
+    printf "Adding dependency: {%s[%s:%d,%d (%d)]<- %s[%s:%d,%d (%d)]\n"
+    oldpatch file !oldblock.st !oldblock.num !oldblock.id mypatch file
+    !myblock.st !myblock.num !myblock.id;
   let cur_adj_list = try Hashtbl.find adj_list mypatch with Not_found->[] in
     Hashtbl.replace adj_list mypatch (oldpatch::cur_adj_list);
-  let cur_map_list = try Hashtbl.find dep_map (mypatch,oldpatch) with Not_found -> (ref []) in
-    begin
-      cur_map_list := (myblock,oldblock)::!cur_map_list;
-      Hashtbl.replace dep_map (mypatch,oldpatch) cur_map_list
-    end
+    let cur_map_list = try Hashtbl.find dep_map (mypatch,oldpatch) with Not_found -> (ref []) in
+      begin
+        cur_map_list := (myblock,oldblock)::!cur_map_list;
+        Hashtbl.replace dep_map (mypatch,oldpatch) cur_map_list
+      end
 
 
 (* The function that builds dependencies between patches. It performs the tasks
@@ -163,7 +165,8 @@ let make_dep_map_file_lst patchlevel patch_file_list =
     in
     let lexbuf = Lexing.from_channel fin in
     let result = Parser.file Lexer.scanner lexbuf in
-      List.iter (accept_commits fname patchlevel) result
+      List.iter (accept_commits fname patchlevel) result;
+      close_in fin
   in
     List.iter make_dep_map patch_file_list
 
@@ -172,7 +175,6 @@ let dep_dfs good_lst =
     let my_itty x y =
       if (List.exists (fun a->(a=x)) good_lst) then
         begin
-          printf "Visiting %s\n" x;
         payload x y
         end
     in
