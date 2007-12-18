@@ -168,8 +168,11 @@ let make_dep_map_file_lst patch_file_list =
 let dep_dfs good_lst =
   let itty payload ht =
     let my_itty x y =
-      if (List.exists (fun a->(a==x)) good_lst) then
+      if (List.exists (fun a->(a=x)) good_lst) then
+        begin
+          printf "Visiting %s\n" x;
         payload x y
+        end
     in
       Hashtbl.iter my_itty ht
   in
