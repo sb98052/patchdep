@@ -15,6 +15,7 @@ open Printf
 open Parser
 open Lexer
 open Types
+open Search
 
 type filename = string
 type patchname = string
@@ -163,3 +164,14 @@ let make_dep_map_file_lst patch_file_list =
       List.iter (accept_commits fname) result
   in
     List.iter make_dep_map patch_file_list
+
+let dep_dfs good_lst =
+  let itty payload ht =
+    let my_itty x y =
+      if (List.exists (fun a->(a==x)) good_lst) then
+        payload x y
+    in
+      Hashtbl.iter my_itty ht
+  in
+    dfs adjlist itty (fun x y->()) (fun x y ->()) 
+

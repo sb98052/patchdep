@@ -22,4 +22,5 @@ let _ =
   let patchset = read_list_from_file !fname_patchset in
   let iwant = read_list_from_file !fname_iwant in
   let dontwant = read_list_from_file !fname_dontwant in
-    make_dep_map_file_lst patchset
+    make_dep_map_file_lst patchset;
+    dep_dfs iwant
