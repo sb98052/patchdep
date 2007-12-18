@@ -114,11 +114,13 @@ let normalize_dependencies patch file commit_id newcommit cur_stamplist =
         normalized_stamp::cur_stamplist
   in
     match newcommit with
-      (* We ignore start2 and count2 because they get calculated implicitly *) 
-      | ChangeSpec((start1,count1),(_,count2)) -> 
+      | ChangeSpec((start1,count1),(start2,count2)) -> 
           let c_newcommit =ref {st=start1;num=count1;id=commit_id}  in
           let normalized_stamp_lst = 
             List.fold_left (normalize c_newcommit (count2-count1)) [] cur_stamplist in
+            (* The commits are in -ascending- chronological order. We need to
+             * correct them explicitly *)
+            c_newcommit := {st=start2;num=count2;id=commit_id};
             ((patch,c_newcommit),normalized_stamp_lst)
 
 
