@@ -16,7 +16,7 @@ let cmdspeclist =
     ("-patchlevel",Arg.Set_int(patch_level),"\tPatch level");
     ("-patchset",Arg.Set_string(fname_patchset),"\tfile with the list of available patches in working order");
     ("-iwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
-    ("-dontwant",Arg.Set_string(fname_iwant), "\tfile with the list of patches you want");
+    ("-dontwant",Arg.Set_string(fname_dontwant), "\tfile with the list of patches you want");
     ("-dot",Arg.Set_string(dot), "\toutput dependencies as a dot file");
   ]
 
@@ -27,10 +27,11 @@ let _ =
   let iwant = read_list_from_file !fname_iwant in
   let dontwant = read_list_from_file !fname_dontwant in
     make_dep_map_file_lst !patch_level patchset;
-    dep_dfs iwant;
-      if (not (!dot= "")) then
-        begin
+    let visited = dep_dfs iwant in
+    if (not (!dot= "")) then
+      begin
         let fout = open_out !dot in
-        dep_dot fout iwant;
-        close_out fout
-        end
+          dep_dot fout iwant;
+          close_out fout
+      end;
+    dep_dfs_not visited dontwant
