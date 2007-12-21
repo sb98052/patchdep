@@ -228,5 +228,5 @@ let dep_dfs_not visited bad_lst =
     in
       List.iter (print_deps_pair_if key) neigh
   in
-    printf "Conflicts to be resolved (<filename> --> <patch>[position of commit] <patch>[position of commit]:\n";
+    printf "\nConflicts to be resolved:\n";
     ignore (dfs adj_list itty print_deps (fun x y -> ()))
