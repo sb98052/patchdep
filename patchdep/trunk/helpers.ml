@@ -1,3 +1,11 @@
+(* Patchdep
+ *
+ * dependency.ml
+ * Copyright (C) 2007-2008 
+ * Sapan Bhatia <sapanb@cs.princeton.edu>
+ * PlanetLab
+ *)
+
 open Printf
 
 let remove_parent_directory patchlevel str =

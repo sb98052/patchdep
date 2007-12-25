@@ -1,4 +1,11 @@
-(* Notes:
+(* Patchdep
+ *
+ * dependency.ml
+ * Copyright (C) 2007-2008 
+ * Sapan Bhatia <sapanb@cs.princeton.edu>
+ * PlanetLab
+ *
+ * Notes:
  *
  * - Since we only look at headers, ignoring the body of the patch, collision
  * resolution is approximate but conservative and sound.
@@ -215,7 +222,7 @@ let dep_dfs_not visited bad_lst =
   in
   let print_deps key neigh =
     let print_deps_pair_if src dst =
-      if (List.exists (fun a->(a=dst)) bad_lst) then
+      if (List.exists (fun a->(a=dst)) bad_lst && (not (List.exists (fun a->(a=src)) bad_lst))) then
         let print_deps_pair src dst =
           let deps = Hashtbl.find dep_map (src,dst) in
           let print_dep (dep:(filename*stamp*stamp)) = 

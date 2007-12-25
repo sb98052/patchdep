@@ -1,4 +1,12 @@
+
 {
+        (* Patchdep
+         *
+         * dependency.ml
+         * Copyright (C) 2007-2008 
+         * Sapan Bhatia <sapanb@cs.princeton.edu>
+         * PlanetLab *)
+
         open Parser        (* The type token is defined in parser.mli *)
         open Printf
         exception Eof
@@ -16,7 +24,7 @@ rule scanner = parse
           | Global -> globscan lexbuf
           | Filespec -> filespec lexbuf
           | Changespec -> changespec lexbuf
-}
+  }
 and
 globscan = parse
           | "+++" { lexstate:= Filespec;filespec lexbuf}
